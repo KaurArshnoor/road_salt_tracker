@@ -1,0 +1,52 @@
+# Registry of publicly available road-salt procurement sources.
+# `parser` maps to a class in salt_tracker.discovery.<module>.<ClassName>
+
+states:
+  MI:
+    name: Michigan
+    parser: michigan.MichiganSource
+    listing_urls:
+      - https://www.michigan.gov/dtmb/procurement/mideal-extended-purchasing-program/mideal-contract-search/categories/folder-2/salt-bulk-rock
+    notes: >
+      One PDF per vendor (Compass Minerals, Detroit Salt, etc). Current-year
+      PDF typically also contains 2 prior fiscal years of pricing.
+
+  NY:
+    name: New York
+    parser: newyork.NewYorkSource
+    listing_urls:
+      - https://ogs.ny.gov/award-23409
+    notes: >
+      OGS statewide award page. Documents (pricing xlsx, award pdf, etc) are
+      linked directly on the page. Historical years are reached natively by
+      following the "Award: NNNNN (Replaces MMMMM)" chain back through prior
+      award pages -- see discovery/newyork.py -- rather than needing Wayback.
+
+  # Placeholders for the remaining in-scope states — fill in `listing_urls`
+  # and add a discovery/<state>.py source class following the MI/NY pattern.
+  WI:
+    name: Wisconsin
+    parser: null
+    listing_urls: []
+  IL:
+    name: Illinois
+    parser: null
+    listing_urls: []
+  MN:
+    name: Minnesota
+    parser: null
+    listing_urls: []
+  PA:
+    name: Pennsylvania
+    parser: pennsylvania.PennsylvaniaSource  # written, but selectors unverified against the live page -- see discovery/pennsylvania.py
+    listing_urls:
+      - https://www.emarketplace.state.pa.us/Search.aspx?searchtype=contract&keywords=rock+salt
+      - https://www.dgs.pa.gov/Materials-Services-Procurement/COSTARS/Pages/COSTARS-Contracts.aspx
+  IN:
+    name: Indiana
+    parser: null
+    listing_urls: []
+  ID:
+    name: Idaho
+    parser: null
+    listing_urls: []
