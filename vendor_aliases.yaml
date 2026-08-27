@@ -1,0 +1,27 @@
+# Known raw-string variants -> canonical vendor name.
+# normalization/vendor.py falls back to fuzzy matching against these
+# canonical names for anything not listed verbatim here.
+
+Compass Minerals: Compass Minerals
+Compass Minerals America: Compass Minerals
+Compass Minerals America Inc: Compass Minerals
+Compass Minerals America, Inc.: Compass Minerals
+Compass: Compass Minerals
+
+Detroit Salt: Detroit Salt
+Detroit Salt Company: Detroit Salt
+Detroit Salt Co: Detroit Salt
+Detroit Salt Company LLC: Detroit Salt
+
+Morton Salt: Morton Salt
+Morton Salt Inc: Morton Salt
+Morton International: Morton Salt
+
+Cargill: Cargill
+Cargill Inc: Cargill
+Cargill Incorporated: Cargill
+Cargill Deicing Technology: Cargill
+
+American Rock Salt: American Rock Salt
+American Rock Salt Company: American Rock Salt
+American Rock Salt Co LLC: American Rock Salt

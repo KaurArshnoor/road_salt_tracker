@@ -1,0 +1,17 @@
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+pdfplumber>=0.11
+pdf2image>=1.17
+pytesseract>=0.3.10
+pandas>=2.2
+openpyxl>=3.1
+pyyaml>=6.0
+rapidfuzz>=3.6
+python-dateutil>=2.9
+groq>=0.11
+tenacity>=8.2
+streamlit
+plotly
+openpyxl
+pandas
